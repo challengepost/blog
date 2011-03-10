@@ -10,15 +10,21 @@ Author:
 
 
 @font-face {
-    font-family: 'Adelle';
-    src: url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot');
-    src: url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot?iefix') format('eot'),
-         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.woff') format('woff'),
-         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.ttf') format('truetype'),
-         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.svg#webfontCO3aKVQa') format('svg');
+    font-family: "Adelle";
+    font-style: normal;
+    font-weight: normal;
+    src: local("☺"), url("http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot?iefix") format("eot"), url("http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.woff") format("woff"), url("http://cpblog.s3.amazonaws.com/font/adelle/adellebasic_bold-webfont.ttf") format("truetype"), url("http://cpblog.s3.amazonaws.com/font/adelle/adellebasic_bold-webfont.svg#webfontnM792KYi") format("svg");
+}
+
+@font-face {
+    font-family: 'MisoRegular';
+    src: url('http://cpblog.s3.amazonaws.com/font/miso-webfont.eot');
+    src: url('http://cpblog.s3.amazonaws.com/font/miso-webfont.eot?iefix') format('eot'),
+         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.woff') format('woff'),
+         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.ttf') format('truetype'),
+         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.svg#webfontJN6LjXeN') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -31,7 +37,7 @@ body {
 	text-align: center;
 	background: #363636;
 	color: #333;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: sans-serif;
 }
 
 .global{
@@ -62,9 +68,10 @@ body {
 		}
 		
 		#nav{
-			position: relative;
+            font-family: "Miso", sans-serif;
+            font-size: 1.4em;			
+            position: relative;
 			text-transform: uppercase;
-			font-weight: bold;
 			padding-left:  84px;		
 			padding-top: 40px;
 			height: 80px;
@@ -231,10 +238,10 @@ body {
 				}
 			
 				.post h2{
-					font-size: 15px;
+					font-size: 18px;
 					padding-bottom: 13px;	
 					padding-top: 8px;
-					font-family: "Adelle", Arial, Helvetica, sans-serif;
+					font-family: "Adelle", Georgia, Times, serif;
 				}
 				
 				.post p, .post ul, .post ol{
