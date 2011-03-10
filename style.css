@@ -11,11 +11,11 @@ Author:
 
 @font-face {
     font-family: 'Adelle';
-    src: url('font/adellebasic_bold-webfont.eot');
-    src: url('font/adellebasic_bold-webfont.eot?iefix') format('eot'),
-         url('font/adellebasic_bold-webfont.woff') format('woff'),
-         url('font/adellebasic_bold-webfont.ttf') format('truetype'),
-         url('font/adellebasic_bold-webfont.svg#webfontCO3aKVQa') format('svg');
+    src: url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot');
+    src: url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot?iefix') format('eot'),
+         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.woff') format('woff'),
+         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.ttf') format('truetype'),
+         url('http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.svg#webfontCO3aKVQa') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -35,7 +35,7 @@ body {
 }
 
 .global{
-	background: #ffffff url(img/bg.jpg) top center;
+	background: #ffffff url(http://cpblog.s3.amazonaws.com/img/bg.jpg) top center;
 }
 
 
@@ -57,7 +57,7 @@ body {
 			height: 111px;
 			position: absolute;
 			text-indent: -9999em;
-			background: url(img/logo.png) top left no-repeat;	
+			background: url(http://cpblog.s3.amazonaws.com/img/logo.png) top left no-repeat;	
 			z-index: 100;	
 		}
 		
@@ -157,7 +157,7 @@ body {
 			height: 30px;
 			border: 0;
 			text-indent: -9999em;
-			background: url(img/s.gif) top left no-repeat;
+			background: url(http://cpblog.s3.amazonaws.com/img/s.gif) top left no-repeat;
 		}
 	
 	
@@ -219,7 +219,7 @@ body {
 				
 				#is-tagged{
 					padding: 12px 20px;
-					background: url(img/t.gif) center left no-repeat;
+					background: url(http://cpblog.s3.amazonaws.com/img/t.gif) center left no-repeat;
 				}
 				
 					#is-tagged a{
@@ -277,7 +277,7 @@ body {
 					color: #999;
 					text-transform: uppercase;
 					font-weight: bold;
-					background: url(img/date.png) top left no-repeat;
+					background: url(http://cpblog.s3.amazonaws.com/img/date.png) top left no-repeat;
 				}
 				
 				a.rmore{
@@ -292,7 +292,7 @@ body {
 					text-transform: uppercase;
 					font-weight: bold;
 					text-align: right;
-					background: url(img/more.png) bottom right no-repeat;
+					background: url(http://cpblog.s3.amazonaws.com/img/more.png) bottom right no-repeat;
 				}
 				
 				.is-image{
@@ -325,7 +325,7 @@ body {
 				font-weight: bold;
 				padding: 2px 0 2px 14px;
 				text-transform: uppercase;
-				background: url(img/left.jpg) left center no-repeat;
+				background: url(http://cpblog.s3.amazonaws.com/img/left.jpg) left center no-repeat;
 			}
 			
 			a.p-next{
@@ -334,7 +334,7 @@ body {
 				font-weight: bold;
 				padding: 2px 14px 2px 0;
 				text-transform: uppercase;
-				background: url(img/right.jpg) right center no-repeat;
+				background: url(http://cpblog.s3.amazonaws.com/img/right.jpg) right center no-repeat;
 			}
 			
 			.paginate a{
@@ -386,13 +386,13 @@ body {
 		}
 		
 		.s1{
-			background: url(img/s1.jpg) center right no-repeat;
+			background: url(http://cpblog.s3.amazonaws.com/img/s1.jpg) center right no-repeat;
 		}
 		.s2{
-			background: url(img/s2.jpg) center right no-repeat;
+			background: url(http://cpblog.s3.amazonaws.com/img/s2.jpg) center right no-repeat;
 		}
 		.s3{
-			background: url(img/s3.jpg) center right no-repeat;
+			background: url(http://cpblog.s3.amazonaws.com/img/s3.jpg) center right no-repeat;
 		}
 
 
