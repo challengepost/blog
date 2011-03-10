@@ -1,0 +1,6 @@
+
+1) Paste code from Disqus where noted in your theme.html file
+
+2) Paste code from theme.html into your custom HTML window on Tumblr.
+
+3) Assets are hosted by us for convenience, but are included as you should self host or move them to Tumblr.

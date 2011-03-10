@@ -1,0 +1,374 @@
+/*
+
+Theme Name: 
+Theme URI: 
+Description:
+Version:
+Author: 
+
+*/	
+
+
+@font-face {
+    font-family: 'Adelle';
+    src: url('font/adellebasic_bold-webfont.eot');
+    src: url('font/adellebasic_bold-webfont.eot?iefix') format('eot'),
+         url('font/adellebasic_bold-webfont.woff') format('woff'),
+         url('font/adellebasic_bold-webfont.ttf') format('truetype'),
+         url('font/adellebasic_bold-webfont.svg#webfontCO3aKVQa') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+			/* global layout */
+
+
+body {
+	font-size: 13px;
+	margin: 0px;
+	text-align: center;
+	background: #363636;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.global{
+	background: #ffffff url(img/bg.jpg) top center;
+}
+
+
+#wrap{
+	position: relative;
+	margin: auto;
+	width: 664px;
+}
+
+	#head{
+		position: relative;
+		height: 187px;	
+	}
+	
+		#logo{
+			top:0;
+			left: 285px;
+			width: 93px;
+			height: 111px;
+			position: absolute;
+			text-indent: -9999em;
+			background: url(img/logo.png) top left no-repeat;	
+			z-index: 100;	
+		}
+		
+		#nav{
+			position: relative;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding-left:  84px;		
+			padding-top: 40px;
+			height: 80px;
+		}
+		
+			#nav li{
+				float: left;
+				width: 90px;
+				text-align: center;
+			}
+			
+			#nav li.breaker{
+				padding-right: 136px;
+			}
+			
+			#nav li a{
+				color: #a0a0a0;	
+			}
+			
+			#nav li a:hover{
+				color: #333;
+				text-decoration: none;
+			}
+		
+		#head h1{
+			font-size: 32px;	
+		}
+		
+			#head h1 a{
+				color: #333;
+			}
+
+	
+	#search{
+		position: relative;
+		background: #fff;
+		width: 664px;
+		overflow: hidden;	
+	}
+	
+		#search .text{
+			float: left;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 10px;
+			width: 314px;
+			border: 0;	
+		}
+		
+		#search .submit{
+			float: right;
+			width: 30px;
+			height: 30px;
+			border: 0;
+			text-indent: -9999em;
+			background: url(img/s.gif) top left no-repeat;
+		}
+	
+	
+	#page{
+		position: relative;
+	}
+	
+		#posts{
+			position: relative;
+			text-align: left;
+		}
+		
+			.post{
+				position: relative;
+				padding: 27px 80px 45px;
+				background: #fff;
+				margin-bottom: 24px;
+				-webkit-box-shadow: 0 0 8px rgba(0,0,0,.1);
+				-moz-box-shadow: 0 0 8px rgba(0,0,0,.1);
+				-o-box-shadow: 0 0 8px rgba(0,0,0,.1);
+				box-shadow: 0 0 8px rgba(0,0,0,.1);
+			}
+			
+				
+				#maker{
+					position: relative;
+					margin: 12px 0;
+					padding: 12px 0;
+					overflow: hidden;
+					border-top: 2px solid #eee;
+					border-bottom: 2px solid #eee;
+				}
+				
+				#maker strong{
+					text-transform: uppercase;
+					color: #999;
+					display: block;
+					padding-bottom: 3px;	
+					padding-top: 3px;
+				}
+				
+				#maker em{
+					color: #333;
+					font-weight: bold;
+					font-style: normal;
+				}
+				
+				#maker img{
+					float: left;
+					padding: 3px;
+					margin-right: 12px;
+					background: #fff;
+					border: 1px solid #ccc;
+					-webkit-box-shadow: 0 0 3px rgba(0,0,0,.1);
+					-moz-box-shadow: 0 0 3px rgba(0,0,0,.1);
+					-o-box-shadow: 0 0 3px rgba(0,0,0,.1);
+					box-shadow: 0 0 3px rgba(0,0,0,.1);
+				}
+				
+				#is-tagged{
+					padding: 12px 20px;
+					background: url(img/t.gif) center left no-repeat;
+				}
+				
+					#is-tagged a{
+						color: #999;
+					}
+			
+				#disq{
+					padding: 15px 0 0;
+				}
+			
+				.post h2{
+					font-size: 15px;
+					padding-bottom: 13px;	
+					padding-top: 8px;
+					font-family: "Adelle", Arial, Helvetica, sans-serif;
+				}
+				
+				.post p, .post ul, .post ol{
+					line-height: 1.5em;
+					padding-bottom: 1em;	
+				}
+				
+				.post strong{
+					font-weight: bold;	
+				}
+				
+				.post em{
+					font-style: italic;	
+				}
+				
+				.post ul li{
+					list-style: inside square
+				}
+				
+				.post ol li{
+					list-style: inside decimal-leading-zero;
+				}
+				
+				.post a{
+					color: #1384bc;
+				}
+				
+				.post a:hover{
+					color: #ff0000;
+				}
+				
+				.pdate{
+					position: absolute;
+					top:27px;
+					left: -8px;
+					width: 56px;
+					padding-left: 7px;
+					height: 30px;
+					line-height: 32px;
+					color: #999;
+					text-transform: uppercase;
+					font-weight: bold;
+					background: url(img/date.png) top left no-repeat;
+				}
+				
+				a.rmore{
+					position: absolute;
+					bottom: 15px;
+					right: -8px;
+					height: 30px;
+					line-height: 32px;
+					padding-right: 6px;
+					width: 90px;
+					color: #999;
+					text-transform: uppercase;
+					font-weight: bold;
+					text-align: right;
+					background: url(img/more.png) bottom right no-repeat;
+				}
+				
+				.is-image{
+					position: relative;
+					padding-bottom: 14px;
+				}
+				
+					.is-image img{
+						display: block;
+						width: 488px;
+						border: 8px solid #ebebeb;
+					}
+				
+				.post blockquote{
+					font-size: 14px;
+					font-family: Georgia;
+					font-style: italic;
+				}
+				
+		
+		.paginate{
+			position: relative;
+			overflow: hidden;
+			padding: 14px 0 35px 0;
+		}
+		
+			a.p-prev{
+				float: left;
+				font-size: 12px;
+				font-weight: bold;
+				padding: 2px 0 2px 14px;
+				text-transform: uppercase;
+				background: url(img/left.jpg) left center no-repeat;
+			}
+			
+			a.p-next{
+				float: right;
+				font-size: 12px;
+				font-weight: bold;
+				padding: 2px 14px 2px 0;
+				text-transform: uppercase;
+				background: url(img/right.jpg) right center no-repeat;
+			}
+			
+			.paginate a{
+				color: #ebaf12;
+			}
+
+
+
+
+
+#footer{
+	position: relative;
+	background: #363636;
+}
+
+	#foot{
+		width: 664px;
+		margin: auto;	
+		position: relative;
+		padding: 32px 0;	
+		overflow: hidden;
+		text-align: left;
+			font-size: 12px;
+	}
+	
+		#foot p{
+			float: left;
+			width: 286px;
+			color: #999;
+			line-height: 1.5em;	
+		}
+		
+		#foot ul{
+			float: right;
+		}
+		
+		#foot li{
+			position: relative;
+			line-height: 2.1em;	
+		}
+		
+		#foot li a{
+			text-transform: uppercase;
+			font-weight: bold;
+			padding-right: 24px;	
+			display: block;
+			text-align: right;
+			color: #999;
+		}
+		
+		.s1{
+			background: url(img/s1.jpg) center right no-repeat;
+		}
+		.s2{
+			background: url(img/s2.jpg) center right no-repeat;
+		}
+		.s3{
+			background: url(img/s3.jpg) center right no-repeat;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

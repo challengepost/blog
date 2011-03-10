@@ -1,0 +1,286 @@
+<!doctype html>
+<html dir="ltr" lang="en" class="no-js">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+<title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<link rel="stylesheet" href="http://htmlrockstarsdemo.com/t/reset.css" media="screen" />
+<link rel="stylesheet" href="http://htmlrockstarsdemo.com/t/style.css" media="screen" />
+
+<style type="text/css"> {CustomCSS} </style>
+		
+<!--
+{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+-->
+	
+<!-- give life to HTML5 objects in IE -->
+<!--[if lte IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<!-- js HTML class -->
+<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+</head>
+<body>
+<!-- begin markup -->
+<div class="global">
+
+<div id="wrap">
+	
+	<div id="head">
+		<a href="/" id="logo">ChallengePost</a>
+
+		<ul id="nav">
+			<li><a href="/">Home</a></li>
+			<li class="breaker"><a href="#" id="s-search">Search</a></li>
+			<li><a href="/archive/">Archive</a></li>
+			<li><a href="#" id="s-tags">Tags</a></li>
+		</ul>
+		
+		<h1><a href="#">The Official ChallengePost Blog</a></h1>		
+	</div>
+	
+	
+	<div id="page">
+		
+		<form id="search" action="/search" method="get">
+			<input type="text" name="q" value="{SearchQuery}" class="text" />
+	 	   <input type="submit" value="Search" class="submit" />
+		</form>
+		
+		
+		<div id="tags">
+                   
+<script type="text/javascript" src="http://rive.rs/javascripts/tumblr_tag_cloud.min.js?css=default&minsize=120&maxsize=280"></script>
+ 
+		</div>					
+        
+		
+		<ol id="posts">
+            {block:Posts}
+                {block:Text}
+                    <li class="post clearfix text">
+                        {block:Title}
+                            <h2><a href="{Permalink}">{Title}</a></h2>
+                        {/block:Title}
+
+                        {Body}
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                   		
+						{block:IndexPage}<a href="{Permalink}" class="rmore">Read More</a>{/block:IndexPage}
+						
+						{block:PermalinkPage}			
+						
+						
+						{block:GroupMembers} 
+						{/block:GroupMembers}
+						<div id="maker">
+							<img src="{PostAuthorPortraitURL-30}" alt="" />
+							<strong>Posted By</strong>
+							<em>{PostAuthorName}</em>
+						</div>	
+						
+						{block:HasTags} 
+						<div id="is-tagged">
+							{block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}						
+						</div>
+						{/block:HasTags}
+								
+						
+						<div id="disq">
+							
+							
+							<strong id="disq-alert">|| + REPLACE THIS WITH YOUR DISQUS CODE + ||</strong>
+						
+							
+						</div>
+						
+						{/block:PermalinkPage}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+				    </li>
+                {/block:Text}
+
+                {block:Photo}
+                    <li class="post clearfix photo">
+                        <div class="is-image">
+                        	<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+						</div>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Photo}
+                
+                {block:Photoset}
+                    <li class="post clearfix photoset">
+                        <div class="is-photoset">
+                        	{Photoset-500}
+						</div>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Photoset}
+
+                {block:Quote}
+                    <li class="post clearfix quote">
+                        <blockquote>
+                        	<p>"{Quote}"</p>
+                        </blockquote>
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Quote}
+
+                {block:Link}
+                    <li class="post clearfix link">
+                        <h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+						<a href="{URL}" class="rmore">Read More</a>
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Link}
+
+                {block:Chat}
+                    <li class="post clearfix chat">
+                        {block:Title}
+                            <h2><a href="{Permalink}">{Title}</a></h2>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+						<a href="{Permalink}" class="rmore">Read More</a>
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Chat}
+
+                {block:Video}
+                    <li class="post clearfix video">
+                        <div class="is-video">
+                        	{Video-500}
+						</div>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Video}
+
+                {block:Audio}
+                    <li class="post clearfix audio">
+                        {AudioPlayerBlack}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+						
+						{block:Date}
+						<span class="pdate">
+							{ShortMonth} {DayOfMonth}
+						</span>
+						{/block:Date}
+                    </li>
+                {/block:Audio}
+            {/block:Posts}
+        </ol><!-- e: posts list -->
+		
+		
+		<div class="paginate">
+			{block:PreviousPage}
+                <a href="{PreviousPage}" class="p-prev">Previous</a>
+            {/block:PreviousPage}
+
+            {block:NextPage}
+                <a href="{NextPage}" class="p-next">Next</a>
+            {/block:NextPage}
+		</div><!-- e: paginate -->
+		
+	</div><!-- e: page -->
+	
+</div><!-- e: wrap -->
+
+</div><!-- e: global -->
+
+
+<div id="footer">
+	<div id="foot">
+		<span id="flogo"></span>
+		<p>ChallengePost is the place for individuals and organizations to crowdsource and engage the public. Find us at www.challengepost.com and one more line of text goes here</p>
+		
+		<ul>			
+			{TwitterUsername}<li><a href="{TwitterUsername}" class="s1">Follow us on Twitter</a></li>{/block:Twitter}
+			<li><a href="#" class="s2">Join us on Facebook</a></li>
+			<li><a href="{RSS}" class="s3">Subscribe</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- site JS -->
+<script src="http://htmlrockstarsdemo.com/t/scripts/jquery-1.5.min.js"></script>
+<script src="http://htmlrockstarsdemo.com/t/scripts/plugins.js"></script>
+<script src="http://htmlrockstarsdemo.com/t/scripts/script.js"></script>
+
+</body>
+</html>
