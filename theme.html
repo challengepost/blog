@@ -56,8 +56,11 @@
     
     
     <div id="tags">
-                   
+
+<!--Start Tumblr Tag Cloud-->
+<script src="http://cpblog.s3.amazonaws.com/scripts/jquery-1.5.min.js"></script>
 <script type="text/javascript" src="http://rive.rs/javascripts/tumblr_tag_cloud.min.js?css=default&minsize=120&maxsize=280"></script>
+<!--End Tumblr Tag Cloud-->
  
     </div>          
         
@@ -282,10 +285,10 @@
 <div id="footer">
   <div id="foot">
     <span id="flogo"></span>
-    <p>ChallengePost is the place for individuals and organizations to crowdsource and engage the public. Find us at <a href="http://challengepost.com">challengepost.com</a>.</p>
+    <p>ChallengePost is the place for individuals and organizations to crowdsource and engage the public. Find us at <a href="http://challengepost.com" style="color: #999">challengepost.com</a>.</p>
     
     <ul>      
-      {TwitterUsername}<li><a href="{TwitterUsername}" class="s1">Follow us on Twitter</a></li>{/block:Twitter}
+      <li><a href="http://twitter.com/challengepost" class="s1">Follow us on Twitter</a></li>
       <li><a href="http://www.facebook.com/pages/ChallengePost/90063435949" class="s2">Join us on Facebook</a></li>
       <li><a href="{RSS}" class="s3">Subscribe</a></li>
     </ul>
@@ -294,9 +297,22 @@
 
 
 <!-- site JS -->
-<script src="http://cpblog.s3.amazonaws.com/scripts/jquery-1.5.min.js"></script>
 <script src="http://cpblog.s3.amazonaws.com/scripts/plugins.js"></script>
 <script src="http://cpblog.s3.amazonaws.com/scripts/script.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2233558-17']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
 </html>
