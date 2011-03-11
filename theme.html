@@ -13,13 +13,13 @@
 <link rel="stylesheet" href="http://cpblog.s3.amazonaws.com/style.css" media="screen" />
 
 <style type="text/css"> {CustomCSS} </style>
-		
+    
 <!--
 {block:Description}
-	<meta name="description" content="{MetaDescription}" />
+  <meta name="description" content="{MetaDescription}" />
 {/block:Description}
 -->
-	
+  
 <!-- give life to HTML5 objects in IE -->
 <!--[if lte IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -32,37 +32,37 @@
 <div class="global">
 
 <div id="wrap">
-	
-	<div id="head">
-		<a href="http://challengepost.com/" id="logo">ChallengePost</a>
+  
+  <div id="head">
+    <a href="http://challengepost.com/" id="logo">ChallengePost</a>
 
-		<ul id="nav">
-			<li><a href="/">Home</a></li>
-			<li class="breaker"><a href="#" id="s-search">Search</a></li>
-			<li><a href="/archive/">Archive</a></li>
-			<li><a href="#" id="s-tags">Tags</a></li>
-		</ul>
-		
-		<h1><a href="#">The Official ChallengePost Blog</a></h1>		
-	</div>
-	
-	
-	<div id="page">
-		
-		<form id="search" action="/search" method="get">
-			<input type="text" name="q" value="{SearchQuery}" class="text" />
-	 	   <input type="submit" value="Search" class="submit" />
-		</form>
-		
-		
-		<div id="tags">
+    <ul id="nav">
+      <li><a href="/">Home</a></li>
+      <li class="breaker"><a href="#" id="s-search">Search</a></li>
+      <li><a href="/archive/">Archive</a></li>
+      <li><a href="#" id="s-tags">Tags</a></li>
+    </ul>
+    
+    <h1><a href="/">{Title}</a></h1>    
+  </div>
+  
+  
+  <div id="page">
+    
+    <form id="search" action="/search" method="get">
+      <input type="text" name="q" value="{SearchQuery}" class="text" />
+       <input type="submit" value="Search" class="submit" />
+    </form>
+    
+    
+    <div id="tags">
                    
 <script type="text/javascript" src="http://rive.rs/javascripts/tumblr_tag_cloud.min.js?css=default&minsize=120&maxsize=280"></script>
  
-		</div>					
+    </div>          
         
-		
-		<ol id="posts">
+    
+    <ol id="posts">
             {block:Posts}
                 {block:Text}
                     <li class="post clearfix text">
@@ -71,96 +71,113 @@
                         {/block:Title}
 
                         {Body}
-                   		
-						{block:IndexPage}<a href="{Permalink}" class="rmore">Read More</a>{/block:IndexPage}
-						
-						{block:PermalinkPage}			
-						
-						
-						{block:GroupMembers} 
-						{/block:GroupMembers}
-						<div id="maker">
-							<img src="{PostAuthorPortraitURL-30}" alt="" />
-							<strong>Posted By</strong>
-							<em>{PostAuthorName}</em>
-						</div>	
-						
-						{block:HasTags} 
-						<div id="is-tagged">
-							{block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}						
-						</div>
-						{/block:HasTags}
-								
-						
-						<div id="disq">
-							
-							
-							<strong id="disq-alert">|| + REPLACE THIS WITH YOUR DISQUS CODE + ||</strong>
-						
-							
-						</div>
-						
-						{/block:PermalinkPage}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
-				    </li>
+                      
+            {block:IndexPage}<a href="{Permalink}" class="rmore">Read More</a>{/block:IndexPage}
+            
+            {block:PermalinkPage}     
+            
+            
+            {block:GroupMembers} 
+            {/block:GroupMembers}
+            <div id="maker">
+              <img src="{PostAuthorPortraitURL-30}" alt="" />
+              <strong>Posted By</strong>
+              <em>{PostAuthorName}</em>
+            </div>  
+            
+            {block:HasTags} 
+            <div id="is-tagged">
+              {block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}           
+            </div>
+            {/block:HasTags}
+                
+            
+            <div id="disq">
+              
+              
+              <strong id="disq-alert">  <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                  var disqus_shortname = 'challengepost'; // required: replace example with your forum shortname
+
+                  // The following are highly recommended additional parameters. Remove the slashes in front to use.
+                  // var disqus_identifier = 'unique_dynamic_id_1234';
+                   var disqus_url = '{Permalink}';
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a></strong>
+            
+              
+            </div>
+            
+            {/block:PermalinkPage}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+            </li>
                 {/block:Text}
 
                 {block:Photo}
                     <li class="post clearfix photo">
                         <div class="is-image">
-                        	<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
-						</div>
+                          <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+            </div>
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Photo}
                 
                 {block:Photoset}
                     <li class="post clearfix photoset">
                         <div class="is-photoset">
-                        	{Photoset-500}
-						</div>
+                          {Photoset-500}
+            </div>
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Photoset}
 
                 {block:Quote}
                     <li class="post clearfix quote">
                         <blockquote>
-                        	<p>"{Quote}"</p>
+                          <p>"{Quote}"</p>
                         </blockquote>
 
                         {block:Source}
                             <div class="source">{Source}</div>
                         {/block:Source}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Quote}
 
@@ -171,13 +188,13 @@
                         {block:Description}
                             <div class="description">{Description}</div>
                         {/block:Description}
-						<a href="{URL}" class="rmore">Read More</a>
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            <a href="{URL}" class="rmore">Read More</a>
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Link}
 
@@ -198,31 +215,31 @@
                                 </li>
                             {/block:Lines}
                         </ul>
-						<a href="{Permalink}" class="rmore">Read More</a>
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            <a href="{Permalink}" class="rmore">Read More</a>
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Chat}
 
                 {block:Video}
                     <li class="post clearfix video">
                         <div class="is-video">
-                        	{Video-500}
-						</div>
+                          {Video-500}
+            </div>
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Video}
 
@@ -233,46 +250,46 @@
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-						
-						{block:Date}
-						<span class="pdate">
-							{ShortMonth} {DayOfMonth}
-						</span>
-						{/block:Date}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
                     </li>
                 {/block:Audio}
             {/block:Posts}
         </ol><!-- e: posts list -->
-		
-		
-		<div class="paginate">
-			{block:PreviousPage}
+    
+    
+    <div class="paginate">
+      {block:PreviousPage}
                 <a href="{PreviousPage}" class="p-prev">Previous</a>
             {/block:PreviousPage}
 
             {block:NextPage}
                 <a href="{NextPage}" class="p-next">Next</a>
             {/block:NextPage}
-		</div><!-- e: paginate -->
-		
-	</div><!-- e: page -->
-	
+    </div><!-- e: paginate -->
+    
+  </div><!-- e: page -->
+  
 </div><!-- e: wrap -->
 
 </div><!-- e: global -->
 
 
 <div id="footer">
-	<div id="foot">
-		<span id="flogo"></span>
-		<p>ChallengePost is the place for individuals and organizations to crowdsource and engage the public. Find us at <a href="http://challengepost.com">challengepost.com</a>.</p>
-		
-		<ul>			
-			{TwitterUsername}<li><a href="{TwitterUsername}" class="s1">Follow us on Twitter</a></li>{/block:Twitter}
-			<li><a href="#" class="s2">Join us on Facebook</a></li>
-			<li><a href="{RSS}" class="s3">Subscribe</a></li>
-		</ul>
-	</div>
+  <div id="foot">
+    <span id="flogo"></span>
+    <p>ChallengePost is the place for individuals and organizations to crowdsource and engage the public. Find us at <a href="http://challengepost.com">challengepost.com</a>.</p>
+    
+    <ul>      
+      {TwitterUsername}<li><a href="{TwitterUsername}" class="s1">Follow us on Twitter</a></li>{/block:Twitter}
+      <li><a href="http://www.facebook.com/pages/ChallengePost/90063435949" class="s2">Join us on Facebook</a></li>
+      <li><a href="{RSS}" class="s3">Subscribe</a></li>
+    </ul>
+  </div>
 </div>
 
 
