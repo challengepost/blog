@@ -39,7 +39,7 @@ body {
     text-align: center;
     background: #363636;
     color: #333;
-    font-family: sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 	}
 
 .global{
@@ -54,6 +54,7 @@ a#top-tab {
     position: absolute;
     right: 8px;
     top: 0;
+    z-index: 9999;
 	}
 a#top-tab:hover{
 	color: #ffe433;
