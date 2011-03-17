@@ -52,7 +52,7 @@ a#top-tab {
     font-weight: bold;
     padding: 9px;
     position: absolute;
-    right: 8px;
+    left: 8px;
     top: 0;
     z-index: 9999;
 	}
