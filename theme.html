@@ -77,7 +77,14 @@
 
                         {Body}
                       
-            {block:IndexPage}<a href="{Permalink}" class="rmore">Read More</a>{/block:IndexPage}
+            {block:IndexPage}
+            {block:HasTags} 
+            <div id="is-tagged-home">
+              {block:Tags}<a href="{TagURL}">{Tag}</a>, {/block:Tags}           
+            </div>
+            {/block:HasTags}
+            <a href="{Permalink}" class="rmore">Read More</a>
+            {/block:IndexPage}
             
             {block:PermalinkPage}     
             

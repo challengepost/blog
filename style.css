@@ -231,12 +231,36 @@ a#top-tab:hover{
 	box-shadow: 0 0 3px rgba(0,0,0,.1);
 	}
 
+#is-tagged-home{
+	padding: 12px 20px;
+	background: url(http://cpblog.s3.amazonaws.com/img/t.gif) center left no-repeat;
+	position: absolute;
+	bottom: 11px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #aaaaaa;
+	display: none;
+	}
+.post:hover	#is-tagged-home{
+	display:block;
+}
+#is-tagged-home a{
+    color: #aaaaaa;
+	}
+#is-tagged-home a:hover{
+	color: #ff0000;
+	text-decoration: none;
+	}
+
 #is-tagged{
 	padding: 12px 20px;
 	background: url(http://cpblog.s3.amazonaws.com/img/t.gif) center left no-repeat;
+	color: #aaaaaa;
+	font-size: 11px;
+	font-weight: bold;
 	}
 #is-tagged a{
-    color: #999;
+    color: #aaaaaa;
 	}
 #is-tagged a:hover{
 	color: #ff0000;
