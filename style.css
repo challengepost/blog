@@ -349,7 +349,7 @@ a.p-prev{
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/arrow-left.png) 1px left no-repeat;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-left.png) no-repeat 0 1px;
 	height: 10px;
 	display: block;
 	}
@@ -360,7 +360,7 @@ a.p-next{
 	letter-spacing: 1px;
 	padding: 0 15px 0 0;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/arrow-right.png) 1px right no-repeat;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-right.png) no-repeat 100% 1px;
 	height: 10px;
 	display: block;
 	}
@@ -372,10 +372,10 @@ a.p-next{
 	text-decoration: none;
 	}
 a.p-next:hover{
-	background-position: -8px right;
+	background-position: 100% -8px;
 	}
 a.p-prev:hover{
-	background-position: -8px left;
+	background-position: 0 -8px;
 	}	
 
 
