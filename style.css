@@ -45,6 +45,20 @@ body {
 .global{
     background: #ffffff url(http://cpblog.s3.amazonaws.com/img/bg.jpg) top center;
 	}
+a#top-tab {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 9px;
+    position: absolute;
+    right: 8px;
+    top: 0;
+	}
+a#top-tab:hover{
+	color: #ffe433;
+	text-decoration: none;
+}		
 
 #wrap{
     position: relative;
@@ -329,21 +343,25 @@ a.rmore:hover{
 	}
 a.p-prev{
 	float: left;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	padding: 2px 0 2px 14px;
+	padding: 0 0 0 15px;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/left.jpg) left center no-repeat;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-left.png) no-repeat 1px left;
+	height: 10px;
+	display: block;
 	}
 a.p-next{
 	float: right;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	padding: 2px 14px 2px 0;
+	padding: 0 15px 0 0;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/right.jpg) right center no-repeat;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-right.png) no-repeat 1px right;
+	height: 10px;
+	display: block;
 	}
 .paginate a{
 	color: #ebaf12;
@@ -352,6 +370,12 @@ a.p-next{
 	color: #ff2828;
 	text-decoration: none;
 	}
+a.p-next:hover{
+	background-position: -8px right;
+	}
+a.p-prev:hover{
+	background-position: -8px left;
+	}	
 
 
 #footer{
@@ -368,10 +392,11 @@ a.p-next{
 	}
 #foot p{
 	float: left;
-	width: 286px;
+	width: 275px;
 	color: #999;
 	font-size: 11px;
-	line-height: 19px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
 	}
 #foot p a{
    	color: #999999;
@@ -385,7 +410,9 @@ a.p-next{
 	}
 #foot li{
 	position: relative;
-	line-height: 2.1em; 
+	height: 16px;
+	margin-bottom: 8px;
+	padding-top: 2px;
 	}
 #foot li a{
 	text-transform: uppercase;
@@ -397,16 +424,42 @@ a.p-next{
 	font-size: 10px;
 	letter-spacing: 1px;
 	}
-#foot li a.twitter{
-	background: url(http://cpblog.s3.amazonaws.com/img/s1.jpg) center right no-repeat;
+#foot li a span{
+	background: url(http://cpblog.s3.amazonaws.com/img/social-icons.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	display:block;
+	position:absolute;
+	top: 0;
+	right: 0;
 	}
-#foot li a.facebook{
-	background: url(http://cpblog.s3.amazonaws.com/img/s2.jpg) center right no-repeat;
+#foot li a.twitter span{
+	background-position: 0 0;
 	}
-#foot li a.rss{
-	background: url(http://cpblog.s3.amazonaws.com/img/s3.jpg) center right no-repeat;
+#foot li a.facebook span{
+	background-position: -16px 0;
 	}
+#foot li a.rss span{
+	background-position: -32px 0;
+	}			
 #foot li a:hover{
 	text-decoration: none;
-	background-position: bottom;
 	}
+#foot li a.twitter:hover{
+	color: #33abd0;
+	}	
+#foot li a.twitter:hover span{
+	background-position: 0 -16px;
+	}	
+#foot li a.facebook:hover{
+	color: #518df5;
+	}	
+#foot li a.facebook:hover span{
+	background-position: -16px -16px;
+	}
+#foot li a.rss:hover{
+	color: #f77911;
+	}	
+#foot li a.rss:hover span{
+	background-position: -32px -16px;
+	}		
