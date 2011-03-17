@@ -401,13 +401,13 @@ body {
             color: #999;
         }
         
-        .s1{
+        .twitter{
             background: url(http://cpblog.s3.amazonaws.com/img/s1.jpg) center right no-repeat;
         }
-        .s2{
+        .facebook{
             background: url(http://cpblog.s3.amazonaws.com/img/s2.jpg) center right no-repeat;
         }
-        .s3{
+        .rss{
             background: url(http://cpblog.s3.amazonaws.com/img/s3.jpg) center right no-repeat;
         }
 
