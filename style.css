@@ -111,10 +111,10 @@ a#top-tab:hover{
 	}   
 	  
 #head h1{
-    font-size: 32px;    
+    font-size: 30px;    
 	}
 #head h1 a{
-    color: #333;
+    color: #363636;
 	}
 #head h1 a:hover{
 	text-decoration: none;
@@ -349,7 +349,7 @@ a.p-prev{
 	letter-spacing: 1px;
 	padding: 0 0 0 15px;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/arrow-left.png) no-repeat 1px left;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-left.png) 1px left no-repeat;
 	height: 10px;
 	display: block;
 	}
@@ -360,7 +360,7 @@ a.p-next{
 	letter-spacing: 1px;
 	padding: 0 15px 0 0;
 	text-transform: uppercase;
-	background: url(http://cpblog.s3.amazonaws.com/img/arrow-right.png) no-repeat 1px right;
+	background: url(http://cpblog.s3.amazonaws.com/img/arrow-right.png) 1px right no-repeat;
 	height: 10px;
 	display: block;
 	}
