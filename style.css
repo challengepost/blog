@@ -204,15 +204,17 @@ a#top-tab:hover{
 	margin: 12px 0;
 	padding: 12px 0;
 	overflow: hidden;
-	border-top: 2px solid #eee;
-	border-bottom: 2px solid #eee;
+	border-top: 3px solid #eee;
+	border-bottom: 3px solid #eee;
 	}
 #maker strong{
 	text-transform: uppercase;
 	color: #999;
 	display: block;
-	padding-bottom: 3px;    
-	padding-top: 3px;
+	padding-bottom: 5px;    
+	padding-top: 4px;
+	font-size: 10px;
+	letter-spacing: 0.5px;
 	}
 #maker em{
 	color: #333;
@@ -221,14 +223,16 @@ a#top-tab:hover{
 	}
 #maker img{
 	float: left;
-	padding: 3px;
+	padding: 2px;
 	margin-right: 12px;
+	margin-left: 2px;
 	background: #fff;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 0 3px rgba(0,0,0,.1);
-	-o-box-shadow: 0 0 3px rgba(0,0,0,.1);
-	box-shadow: 0 0 3px rgba(0,0,0,.1);
+	height: 32px;
+	width: 32px;
+	-webkit-box-shadow: 0 0 2px #555555;
+	-moz-box-shadow: 0 0 2px #555555;
+	-o-box-shadow: 0 0 2px #555555;
+	box-shadow: 0 0 2px #555555;
 	}
 
 #is-tagged-home{
@@ -487,4 +491,113 @@ a.p-prev:hover{
 	}	
 #foot li a.rss:hover span{
 	background-position: -32px -16px;
-	}		
+	}
+	
+
+/************ DISCUS ************/
+li.post #dsq-content .dsq-like-faces li {
+    color: #363636;
+    float: left;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 13px;
+    margin: 0 5px 5px 0;
+    text-transform: uppercase;
+	}
+li.post #dsq-content .dsq-avatar img {
+    border: medium none;
+    float: left;
+    padding: 2px;
+    margin-right: 0;
+    margin-left: 2px;
+    margin-top: 1px;
+    background: #fff;
+    height: 24px;
+    width: 24px;
+    -webkit-box-shadow: 0 0 2px #555555;
+    -moz-box-shadow: 0 0 2px #555555;
+    -o-box-shadow: 0 0 2px #555555;
+    box-shadow: 0 0 2px #555555;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+     border-radius: 0;
+    }
+li.post .dsq-comment-header {
+    background: none;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    padding: 8px;
+    border: none;
+    margin: 0 0 8px 0;
+    max-height: 24px; /* avatar height */
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    line-height: 14px;
+	}
+li.post .dsq-comment-body{
+	padding: 0 0 0 40px;
+	font-weight: normal;
+	}
+li.post .dsq-comment-message {
+    line-height: 1.5em;
+    margin: 0 0 10px 8px;
+	}
+li.post .dsq-comment-footer{
+	padding-left: 8px;
+	font-size: 11px;
+	font-weight: bold;
+	}
+li.post .dsq-comment-meta a, li.post .dsq-comment-actions a {
+	color: #999999;
+	opacity: 1;
+	}
+li.post .dsq-comment-meta a:hover, li.post .dsq-comment-actions a:hover {
+	color: #FF0000;
+	opacity: 1;
+	}	
+li.post li.dsq-comment-flag{
+	position: absolute;
+	top: 6px;
+	right: 18px;
+	}
+li.post .dsq-commenter-bio{
+	display: none;
+	}	
+li.post .dsq-comment-meta{
+	float: right;
+	}
+li.post #dsq-content .dsq-comment-actions{
+	float: left;
+	}
+li.post #dsq-content .dsq-comment-actions li{
+	line-height: 11px;
+	margin-right: 24px;
+}	
+li.post #dsq-content .dsq-comment-actions li a{
+	padding-left: 16px;
+	}	
+li.post .dsq-comment-actions li:first-child a{
+	background: url(http://cpblog.s3.amazonaws.com/img/blog-comment-heart.gif) no-repeat 0px 0;
+	height: 12px;
+	display: block;	
+	}
+li.post .dsq-comment-actions li a.dsq-comment-reply{
+	background: url(http://cpblog.s3.amazonaws.com/img/blog-comment-reply.gif) no-repeat 0px 0;
+	height: 10px;
+	display: block;	
+	}	
+li.post .dsq-comment-actions li:first-child a:hover,
+li.post .dsq-comment-actions li a.dsq-comment-reply:hover{
+	background-position: 0px -12px;
+	}
+li.post a.dsq-subscribe-email em, li.post a.dsq-subscribe-rss em {
+    font-style: normal;
+    text-decoration: none;
+	}	
+    
