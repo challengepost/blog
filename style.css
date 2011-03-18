@@ -599,5 +599,11 @@ li.post .dsq-comment-actions li a.dsq-comment-reply:hover{
 li.post a.dsq-subscribe-email em, li.post a.dsq-subscribe-rss em {
     font-style: normal;
     text-decoration: none;
-	}	
+	}
+li.post #dsq-content h3{
+    font-family: "Adelle",Georgia,Times,serif;
+    font-size: 18px;
+    margin: 0 0 1em;
+    font-weight: normal;
+	}		
     
