@@ -46,7 +46,7 @@ body {
     background: #ffffff url(http://cpblog.s3.amazonaws.com/img/bg.jpg) top center;
 	}
 a#top-tab {
-    background-color: url(http://cpblog.s3.amazonaws.com/img/black-40-percent.png) repeat;
+    background: url(http://cpblog.s3.amazonaws.com/img/black-40-percent.png) repeat;
     color: #FFFFFF;
     font-size: 10px;
     font-weight: bold;
