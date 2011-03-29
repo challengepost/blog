@@ -11,23 +11,42 @@ Author:
 
 */  
 
-
 @font-face {
-    font-family: "Adelle";
-    font-style: normal;
-    font-weight: normal;
-    src: local("☺"), url("http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.eot?iefix") format("eot"), url("http://cpblog.s3.amazonaws.com/font/adellebasic_bold-webfont.woff") format("woff"), url("http://cpblog.s3.amazonaws.com/font/adelle/adellebasic_bold-webfont.ttf") format("truetype"), url("http://cpblog.s3.amazonaws.com/font/adelle/adellebasic_bold-webfont.svg#webfontnM792KYi") format("svg");
+  font-family: 'Adelle';
+  src: url('http://a0.challengepost.com/fonts/adelle/adellebasic_bold-webfont.eot');
+  src: local('☺'),
+    url('http://a0.challengepost.com/fonts/adelle/adellebasic_bold-webfont.eot?iefix')           format('eot'),
+    url('http://a0.challengepost.com/fonts/adelle/adellebasic_bold-webfont.woff')                format('woff'),
+    url('http://a0.challengepost.com/fonts/adelle/adellebasic_bold-webfont.ttf')                 format('truetype'),
+    url('http://a0.challengepost.com/fonts/adelle/adellebasic_bold-webfont.svg#webfontnM792KYi') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MisoRegular';
-    src: url('http://cpblog.s3.amazonaws.com/font/miso-webfont.eot');
-    src: url('http://cpblog.s3.amazonaws.com/font/miso-webfont.eot?iefix') format('eot'),
-         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.woff') format('woff'),
-         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.ttf') format('truetype'),
-         url('http://cpblog.s3.amazonaws.com/font/miso-webfont.svg#webfontJN6LjXeN') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Miso';
+  src: url('http://a0.challengepost.com/fonts/miso/miso.eot');
+  src: local('☺'),
+    url('http://a0.challengepost.com/fonts/miso/miso.eot?iefix')           format('eot'),
+    url('http://a0.challengepost.com/fonts/miso/miso.woff')                format('woff'),
+    url('http://a0.challengepost.com/fonts/miso/miso.ttf')                 format('truetype'),
+    url('http://a0.challengepost.com/fonts/miso/miso.svg#webfontJN6LjXeN') format('svg'),
+    url('http://a0.challengepost.com/fonts/miso/miso.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Miso Bold';
+  src: url('http://a0.challengepost.com/fonts/miso/miso-bold.eot');
+  src: local('☺'),
+    url('http://a0.challengepost.com/fonts/miso/miso-bold.eot?iefix')           format('eot'),
+    url('http://a0.challengepost.com/fonts/miso/miso-bold.woff')                format('woff'),
+    url('http://a0.challengepost.com/fonts/miso/miso-bold.ttf')                 format('truetype'),
+    url('http://a0.challengepost.com/fonts/miso/miso-bold.svg#webfonttgxWE3aO') format('svg'),
+    url('http://a0.challengepost.com/fonts/miso/miso-bold.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
