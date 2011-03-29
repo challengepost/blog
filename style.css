@@ -103,9 +103,9 @@ a#top-tab:hover{
 	}
         
 #nav{
-    font-family: "Miso", sans-serif;
+    font-family: "Miso Bold", sans-serif;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 1px;           
     position: relative;
     text-transform: uppercase;
