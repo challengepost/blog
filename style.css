@@ -316,7 +316,9 @@ a#top-tab:hover{
 	margin-left: 12px;
 	}
 .post ol li{
-	list-style: outside decimal-leading-zero;
+	list-style: outside decimal;
+	margin-left: 16px;
+	margin-bottom: 10px;
 	}
 .post a{
 	color: #1384bc;
