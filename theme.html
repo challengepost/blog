@@ -77,16 +77,149 @@
 
                         {Body}
                       
-            {block:IndexPage}
-            {block:HasTags} 
-            <div id="is-tagged-home">
-              {block:Tags}<a href="{TagURL}">{Tag}</a>,&nbsp;&nbsp;{/block:Tags}           
+             
+                       
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+            <!-- MOVED LI TO THE COMMENTS </li>-->
+                {/block:Text}
+
+                {block:Photo}
+                    <li class="post clearfix photo">
+                        <div class="is-image">
+                          <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
             </div>
-            {/block:HasTags}
-            <a href="{Permalink}" class="rmore">Read More</a>
-            {/block:IndexPage}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
             
-            {block:PermalinkPage}     
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Photo}
+                
+                {block:Photoset}
+                    <li class="post clearfix photoset">
+                        <div class="is-photoset">
+                          {Photoset-500}
+            </div>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Photoset}
+
+                {block:Quote}
+                    <li class="post clearfix quote">
+                        <blockquote>
+                          <p>"{Quote}"</p>
+                        </blockquote>
+
+                        {block:Source}
+                            <div class="source">{Source}</div>
+                        {/block:Source}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Quote}
+
+                {block:Link}
+                    <li class="post clearfix link">
+                        <h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
+
+                        {block:Description}
+                            <div class="description">{Description}</div>
+                        {/block:Description}
+            <a href="{URL}" class="rmore">Comments</a>
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Link}
+
+                {block:Chat}
+                    <li class="post clearfix chat">
+                        {block:Title}
+                            <h2><a href="{Permalink}">{Title}</a></h2>
+                        {/block:Title}
+
+                        <ul class="chat">
+                            {block:Lines}
+                                <li class="{Alt} user_{UserNumber}">
+                                    {block:Label}
+                                        <span class="label">{Label}</span>
+                                    {/block:Label}
+
+                                    {Line}
+                                <!-- </li>-->
+                            {/block:Lines}
+                        </ul>
+            <a href="{Permalink}" class="rmore">Read More</a>
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Chat}
+
+                {block:Video}
+                    <li class="post clearfix video">
+                        <div class="is-video">
+                          {Video-500}
+            </div>
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                {/block:Video}
+
+                {block:Audio}
+                    <li class="post clearfix audio">
+                        {AudioPlayerBlack}
+
+                        {block:Caption}
+                            <div class="caption">{Caption}</div>
+                        {/block:Caption}
+            
+            {block:Date}
+            <span class="pdate">
+              {ShortMonth} {DayOfMonth}
+            </span>
+            {/block:Date}
+                    <!-- </li>-->
+                    {/block:Audio}
+
+                     {block:PermalinkPage}     
             
             
             {block:GroupMembers} 
@@ -130,146 +263,18 @@
             </div>
             
             {/block:PermalinkPage}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-            </li>
-                {/block:Text}
 
-                {block:Photo}
-                    <li class="post clearfix photo">
-                        <div class="is-image">
-                          <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+            {block:IndexPage}
+            {block:HasTags} 
+            <div id="is-tagged-home">
+              {block:Tags}<a href="{TagURL}">{Tag}</a>,&nbsp;&nbsp;{/block:Tags}           
             </div>
-
-                        {block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Photo}
-                
-                {block:Photoset}
-                    <li class="post clearfix photoset">
-                        <div class="is-photoset">
-                          {Photoset-500}
-            </div>
-
-                        {block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Photoset}
-
-                {block:Quote}
-                    <li class="post clearfix quote">
-                        <blockquote>
-                          <p>"{Quote}"</p>
-                        </blockquote>
-
-                        {block:Source}
-                            <div class="source">{Source}</div>
-                        {/block:Source}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Quote}
-
-                {block:Link}
-                    <li class="post clearfix link">
-                        <h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
-
-                        {block:Description}
-                            <div class="description">{Description}</div>
-                        {/block:Description}
-            <a href="{URL}" class="rmore">Read More</a>
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Link}
-
-                {block:Chat}
-                    <li class="post clearfix chat">
-                        {block:Title}
-                            <h2><a href="{Permalink}">{Title}</a></h2>
-                        {/block:Title}
-
-                        <ul class="chat">
-                            {block:Lines}
-                                <li class="{Alt} user_{UserNumber}">
-                                    {block:Label}
-                                        <span class="label">{Label}</span>
-                                    {/block:Label}
-
-                                    {Line}
-                                </li>
-                            {/block:Lines}
-                        </ul>
+            {/block:HasTags}
             <a href="{Permalink}" class="rmore">Read More</a>
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Chat}
+            {/block:IndexPage}
 
-                {block:Video}
-                    <li class="post clearfix video">
-                        <div class="is-video">
-                          {Video-500}
-            </div>
 
-                        {block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Video}
-
-                {block:Audio}
-                    <li class="post clearfix audio">
-                        {AudioPlayerBlack}
-
-                        {block:Caption}
-                            <div class="caption">{Caption}</div>
-                        {/block:Caption}
-            
-            {block:Date}
-            <span class="pdate">
-              {ShortMonth} {DayOfMonth}
-            </span>
-            {/block:Date}
-                    </li>
-                {/block:Audio}
+            </li><!-- global LI will hopefully close all blocks without breaking :) -->
             {/block:Posts}
         </ol><!-- e: posts list -->
     
